@@ -1,5 +1,3 @@
-# making feature vector for aroh ragas
-
 list = []
 f1 = open('aroh.txt','r')
 f3 = open('aroh_vec.txt','w')

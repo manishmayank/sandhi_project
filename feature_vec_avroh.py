@@ -1,3 +1,5 @@
+# making feature vector for avroh ragas
+
 list = []
 f1 = open('avroh.txt','r')
 f3 = open('avroh_vec.txt','w')

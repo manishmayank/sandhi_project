@@ -1,0 +1,21 @@
+f1 = open('label_time.txt','w')
+f2 = open('time.txt','r')
+
+for line in f2:
+    if(line == 'n'):
+        f1.write('1')
+    elif(line == 'd'):
+        f1.write('2')
+    elif(line == 'm'):
+        f1.write('3')
+    elif(line == 's'):
+        f1.write('4')
+    elif(line == 'e'):
+        f1.write('5')
+    elif(line == 'a'):
+        f1.write('6')
+    else:
+        f1.write('7')
+
+    
+    

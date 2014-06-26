@@ -1,3 +1,5 @@
+# finding all substrings which are later to be used as features
+
 f1 = open('aroh.txt','r')
 f2 = open('4gram(aroh).txt','w')
 

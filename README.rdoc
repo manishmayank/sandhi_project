@@ -1,0 +1,8 @@
+
+n = 1    //night
+d = 2    //day
+m = 3    //morning
+s = 4    //spring
+e = 5    //evening
+a = 6    //any
+r = 7    //rainy
