@@ -1,0 +1,4 @@
+f = open('aaroh.txt','w')
+f.write('myself Mayank\n')
+f.write('hi! everyone\n')
+f.close()
