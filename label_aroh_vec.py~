@@ -1,0 +1,7 @@
+f1=open('gram_aroh.txt','r')
+#f2=open
+dic={}
+for line in f1:
+    l=line.split('\t')
+    dic.update({l[0]:l[1][0:len(l[1])-1]})
+print dic

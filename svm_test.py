@@ -1,16 +1,9 @@
-import numpy as NP
-from svm import*
-
-Data = NP.random.randint(-5,5,1000).reshape(500,2)
-
-#rx = [(x**2 + y**2)<9 and 1 or 0 for (x,y) in Data]
-
-#px = svm_problem(rx,Data)
-
-#pm = svm_parameter(kernel_type=RBF)
-
-#v = svm_model(px,pm)
-
-#v.predict([3,1])
-
-print Data
+from svmutil import *
+# Specify training set
+prob = svm_problem([1,-1],[[1,0,1],[-1,0,-1]])
+# Train the model
+m = svm_train(prob, '-t 0 -c 1')
+# Make a prediction
+predicted_labels, _, _ = svm_predict([-1],[[1,1,1]],m)
+# Predicted label for input [1,1,1] is predicted_labels[0]
+print "Predicted value: " + str(predicted_labels[0])
